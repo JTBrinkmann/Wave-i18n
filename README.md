@@ -1,5 +1,10 @@
 # Wave
 
+> This fork has the following changes
+> - i18n: all english texts (except "copyright") are extracted to locales/en.json
+> - added german translation
+> - use slim, local jquery copy instead of loading from code.jquery.com
+
 Wave is a [Ghost](https://github.com/TryGhost/Ghost) theme dedicated to podcasters. Share your voice and words with your audience.
 
 **Demo: https://wave.ghost.io**
