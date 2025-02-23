@@ -56,21 +56,6 @@
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
-            },
-            "apple_podcasts_link": {
-                "type": "text",
-                "default": "https://podcasts.apple.com/"
-            },
-            "google_podcasts_link": {
-                "type": "text",
-                "default": "https://podcasts.google.com/"
-            },
-            "spotify_link": {
-                "type": "text",
-                "default": "https://open.spotify.com/"
-            },
-            "rss_link": {
-                "type": "text"
             }
         }
     },
