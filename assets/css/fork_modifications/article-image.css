@@ -1,0 +1,36 @@
+.post-template .single > .post-header {
+  margin-top: 6em;
+  text-shadow: 0 0 5px #fff;
+
+  .post-meta {
+    color: var(--color-darker-gray);
+  }
+
+  .gh-article-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    height: 50vh;
+
+    &::after {
+      content: "";
+      height: 100%;
+      background: linear-gradient(to bottom, #fffb, #fff5);
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+    img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.post-template #gh-head {
+  background: none;
+  text-shadow: 0 0 4px #fff;
+  .gh-primary-btn { text-shadow: none; }
+}

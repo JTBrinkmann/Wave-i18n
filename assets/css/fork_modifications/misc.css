@@ -1,0 +1,10 @@
+.gh-head-logo img {
+  max-height: 100px;
+  @media (max-width: 767px) {
+    max-height: 64px;
+  }
+}
+
+.gh-foot .subscribe {
+  display: none;
+}

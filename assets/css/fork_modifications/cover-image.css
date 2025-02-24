@@ -1,0 +1,26 @@
+.home-template {
+  #gh-head {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: none;
+  }
+  .site-cover {
+    z-index: 0;
+    max-height: 50vh;
+    min-height: unset;
+    height: 480px;
+  }
+  .u-overlay::before {
+    opacity: 1 !important;
+    background: linear-gradient(to bottom, #fffb, #fff5);
+  }
+  .cover-content {
+    color: var(--black-color);
+    font-weight: bold;
+    text-shadow: 0 0 8px #fff;
+  }
+  .cover-logo {
+    display: none;
+  }
+}
