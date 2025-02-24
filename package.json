@@ -76,8 +76,9 @@
     },
     "scripts": {
         "dev": "gulp",
-        "test": "gscan .",
-        "zip": "gulp zip"
+        "build": "gulp build",
+        "zip": "gulp zip",
+        "test": "gscan ."
     },
     "devDependencies": {
         "@tryghost/shared-theme-assets": "2.5.0",
