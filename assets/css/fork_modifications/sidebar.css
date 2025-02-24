@@ -1,0 +1,18 @@
+.site-content > .gh-outer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  > .gh-inner {
+    flex: 1 0 auto;
+  }
+
+  > .sidebar {
+    flex: 1 0 200px;
+    margin: auto;
+    max-width: 450px;
+    background: #eee;
+    padding: 1em;
+    border-radius: 0.5rem;
+  }
+}
