@@ -1,0 +1,4 @@
+node_modules
+bun.lockdb
+.vscode
+dist
