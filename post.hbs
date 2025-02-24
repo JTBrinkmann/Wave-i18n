@@ -16,11 +16,12 @@
 
         <div class="gh-canvas">
             <div class="author-list">
-                <h3 class="author-list-title">
+                <span class="author-list-title">
                     {{t "Written by:"}}
-                </h3>
+                </span>
                 {{#foreach authors}}
                     {{> "author-box"}}
+                    {{#unless @last}}, {{/unless}}
                 {{/foreach}}
             </div>
             {{#if comments}}
