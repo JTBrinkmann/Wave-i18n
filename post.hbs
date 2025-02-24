@@ -23,9 +23,10 @@
 
         <div class="gh-canvas">
             <div class="author-list">
-                <h3 class="author-list-title">
+                <span class="author-list-title">
                     {{#if og_description}}{{t "Hosted by:"}}{{else}}{{t "Written by:"}}{{/if}}
-                </h3>
+                </span>
+                &nbsp;
                 {{#foreach authors}}
                     {{> "author-box"}}
                 {{/foreach}}
