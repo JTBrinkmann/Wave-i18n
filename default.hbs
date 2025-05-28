@@ -44,11 +44,14 @@
             </nav>
 
             <div class="gh-head-actions">
-                {{#unless @site.members_enabled}}
+                {{^match @custom.navigation_layout "Stacked"}}
+                    <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                {{/match}}
+                {{!-- {{#unless @site.members_enabled}}
                     {{^match @custom.navigation_layout "Stacked"}}
                         <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     {{/match}}
-                {{else}}
+                {else}}
                     <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     <div class="gh-head-members">
                         {{#unless @member}}
@@ -62,7 +65,7 @@
                             <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
                         {{/unless}}
                     </div>
-                {{/unless}}
+                {{/unless}} --}}
             </div>
         </div>
     </header>
