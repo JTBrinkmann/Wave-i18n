@@ -1,32 +1,18 @@
 
-#gh-head {
-  grid-area: head;
-}
-.site-cover {
-  grid-area: cover;
-}
 .site-content {
-  grid-area: content;
-}
-.gh-foot {
-  grid-area: foot;
-}
-.sidebar {
-  grid-area: sidebar;
-}
-.site {
   display: grid;
   grid-template:
-    "head    head   " auto
     "cover   cover  " auto
-    "content sidebar" auto
-    "foot    sidebar" auto /
+    "content sidebar" auto /
     1fr 400px;
 
   @media (max-width: 900px) {
-    display: flex;
+    display: block;
   }
 }
+.site-cover, .post-header { grid-area: cover; }
+.site-main { grid-area: content; }
+.sidebar { grid-area: sidebar; }
 
 .sidebar {
   padding: 1em;
@@ -41,6 +27,9 @@
     cursor: unset;
   }
 
+  a {
+    text-decoration: underline;
+  }
 
   & > *:not(:last-child) {
     margin-bottom: 0.75em;
