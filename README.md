@@ -4,6 +4,13 @@
 > - i18n: all english texts (except "copyright") are extracted to locales/en.json
 > - added german translation (locales/de.json)
 > - use slim, local jquery copy instead of loading from code.jquery.com
+>
+> The fribue branch additionally
+> - added a sidebar
+> - added theme setting to toggle authors list
+> - revamped the cover image style
+> - removed podcast player
+> - added some minor adjustments
 
 Wave is a [Ghost](https://github.com/TryGhost/Ghost) theme dedicated to podcasters. Share your voice and words with your audience.
 
