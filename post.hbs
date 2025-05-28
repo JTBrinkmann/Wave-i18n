@@ -15,15 +15,17 @@
                 {{content}}
             </div>
 
-            <div class="author-list">
-                <span class="author-list-title">
-                    {{t "Written by:"}}
-                </span>
-                {{#foreach authors}}
-                    {{> "author-box"}}
-                    {{#unless @last}}, {{/unless}}
-                {{/foreach}}
-            </div>
+            {{#if @custom.show_authors}}
+                <div class="author-list">
+                    <span class="author-list-title">
+                        {{t "Written by:"}}
+                    </span>
+                    {{#foreach authors}}
+                        {{> "author-box"}}
+                        {{#unless @last}}, {{/unless}}
+                    {{/foreach}}
+                </div>
+            {{/if}}
 
             {{#if comments}}
                 <section class="gh-comments">
